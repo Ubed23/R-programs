@@ -109,3 +109,121 @@ n3= 1.5:30
 n3
 class(n3)
 
+rep(45,8)
+rep("mango",10)
+rep
+
+sample(1:50,24)
+sample(1:10,200)
+sample(1:10,20,replace=TRUE)
+sample(c("mango","apple","guava"),6,replace=T)
+
+x=c(2,45,67,354,24,25)
+x
+x[5]
+x[1:6]
+x[5:6]
+x[-1]
+
+x[2:3]+x[3:4]
+
+x[c(-1,-4)]
+x
+x[1]=23
+x
+x[-1]=33
+x
+x<34
+x>15
+x>=23
+x<=23
+y[x<34]=55
+x
+x<34
+x[x<34]=45
+x
+ 
+marks=c(23,45,67,43,45,56)
+marks<45
+marks
+marks[marks<45]
+
+names=c('muddu','dummu','katte')
+names
+"muddu" %in% names
+"dummu" %in% names
+sort(marks)
+sort(marks,decreasing=T)
+
+help(sort)
+length(marks)
+
+1:12
+paste(1:12)
+
+nth=paste(1:12,c("st","nd","rd",rep("th",9)))
+nth
+
+month.name
+month.abb
+ 
+paste(month.abb, "is the ", nth ,"month of the year")
+
+
+aaa=c(sample(1000:2000,5))
+aaa
+length(aaa)
+max(aaa)
+min(aaa)
+sum(aaa)
+mean(aaa)
+sort(aaa)
+median(aaa)
+help(mode)
+mode(aaa)
+
+
+data=c(1,1,3,4,4,5,6,6,5,5,5,6,7,8,9,9,9,9,9,8,8,7,7,6,6,4)
+my_data=mfv(data)
+my_data
+mfv(data)
+
+#Data Frame
+a=c(23,34,56,75,34)
+b=c("p","q","r","s","t")
+df=data.frame(a,b)
+df
+view(df)
+View(df)
+
+df1=data.frame(training=c('strength',"stamina","other"),
+               pulse=c(100,150,120),duration=c(60,30,45))
+df1
+View(df1)
+df1[,1]
+df1[2,]
+df1[,]
+df1$training
+
+food = data.frame(name=c("Pav Bhaji","Paneer Masala","Kaju Katli",
+                         "Butter Chicken","Gulabjamun","Mutton Biryani"),
+                  type=c("Veg","Veg","Veg","Nonveg","Veg","Nonveg"),
+                  taste=c("Spicy","Spicy","Sweet","Spicy","Sweet","Spicy"),
+                  price=c(120,235,420,340,90,315))
+food
+
+food[food$type=="Veg",]
+
+food[food$type=="Nonveg",c(1,4)]
+food[food$taste=="Spicy"& food$price<300,]
+food[food$taste=="Spicy"| food$price<300,]
+
+Orange
+mtcars
+dim(mtcars)
+nrow(mtcars)
+ncol(mtcars)
+str(mtcars)
+summary(mtcars)
+colnames(mtcars)
+help(mtcars)
